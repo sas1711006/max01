@@ -1,7 +1,7 @@
-input.onButtonPressed(Button.A, function () {
-    servos.P0.run(0)
+music.setVolume(255)
+basic.forever(function () {
+    music.playTone(988, music.beat(BeatFraction.Half))
+    basic.pause(100)
+    music.playTone(698, music.beat(BeatFraction.Half))
+    basic.pause(100)
 })
-input.onButtonPressed(Button.B, function () {
-    servos.P0.run(50)
-})
-servos.P0.setAngle(0)
